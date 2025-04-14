@@ -9,7 +9,7 @@ class Post(models.Model):
     text = models.TextField()
     Name = models.TextField()
     TimeZone =  models.TextField()
-    Location = models.TextField()
+    # Location = models.TextField()
     Date = models.DateField(blank=True, null=True)
     Time = models.TimeField(blank=True, null=True)
     created_date = models.DateTimeField(default=timezone.now)
