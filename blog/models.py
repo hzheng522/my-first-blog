@@ -8,10 +8,10 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     text = models.TextField()
     Name = models.TextField()
-    Date = models.DateField(blank=True, null=True)
-    Time = models.TimeField(blank=True, null=True)
     TimeZone =  models.TextField()
     Location = models.TextField()
+    Date = models.DateField(blank=True, null=True)
+    Time = models.TimeField(blank=True, null=True)
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
 
