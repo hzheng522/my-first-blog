@@ -8,7 +8,6 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     text = models.TextField()
     name = models.TextField(max_length=100, default='Untitled')
-    timeZone =  models.TextField()
     location = models.TextField(max_length=100, default='Untitled')
     date = models.DateField(blank=True, null=True)
     time = models.TimeField(blank=True, null=True)
